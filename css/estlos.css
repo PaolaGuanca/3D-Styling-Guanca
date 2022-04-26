@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 5px;
+}
+
+html{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+}
+
+body {
+  background: url("https://cdn.pixabay.com/photo/2017/06/02/10/36/rocket-2365907_640.jpg") no-repeat center center fixed;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  left: 0;
+  top: 0;
+   background-color: cadetblue;
+   max-width: 1400px;
+   min-height: 100vh;
+   margin: 0px auto;
+}
+
+ul {
+    list-style-type: none;
+    background-color: aqua;
+    overflow: hidden;
+    margin-right: 0px;
+    padding: 0px;
+}
+
+.barra-navegacion li a {
+    display: flex;
+    flex-direction: row;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+li {
+    float: left;
+}
+
+.fotos a {
+  text-decoration: none;
+  font-size: larger;
+}
+
+header {
+    background: url(" https://cdn.pixabay.com/photo/2020/04/22/20/38/colorful-background-5079991__340.jpg") no-repeat center center fixed;
+    background-color: rgb(12, 146, 106);
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    top: 0;
+}
+
+#imagDefondo {
+    background: url("https://cdn.pixabay.com/photo/2017/06/18/16/13/printer-2416269_640.jpg") no-repeat center;
+    background-size: 1400px;
+}
+
+h1{
+    text-align: center;
+}
+
+.imagCircular img {
+    border-radius: 60%;
+    margin-left: 30px;
+}
+
+.main {
+  min-height: 600px;
+    width: 100%;
+    background-color: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, .05fr);
+}
+
+.productos {
+  min-height: 600px;
+    width: 100%;
+    background-color: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.header{
+  grid-column: 1/ span 3;
+  grid-row: 1/ span 1;
+}
+
+.barra-navegacion{
+  grid-column: 1/ span 3;
+  grid-row: 2/ span 1;    
+}
+
+.presentacion{
+  grid-column: 1/ span 3;
+  grid-row: 3/ span 1;
+}
+
+.footer{
+  grid-column: 1/ span 3;
+  grid-row: 4/ span 1;
+}
+
+.footer-p{
+  grid-column: 1/ span 3;
+  grid-row: 4 / span 1;
+}
+
+#edades {
+  min-height: 200px;
+  width: 100%;
+  background-color: aqua;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  padding: 0;
+}
+
+.fotos {
+    min-height: 200px;
+    width: 100%;
+    background-color: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    padding: 0;
+  }
+
+  .img{
+    border: 2px solid #fff;
+  }
+  
+  .img1 {
+    background-image: url("https://cdn.pixabay.com/photo/2022/02/12/19/58/boats-7009838__340.jpg");
+    background-size: cover;
+    background-position: right;
+  }
+
+  .img2 {
+    background-image: url("https://cdn.pixabay.com/photo/2016/06/26/15/12/wrench-1480588__340.jpg");
+    background-size: cover;
+    background-position: center;
+    
+  }
+  
+  .img3 {
+    background-image: url("https://cdn.pixabay.com/photo/2018/04/16/14/05/texture-3324749__340.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .img4 {
+    background-image: url("https://cdn.pixabay.com/photo/2015/02/25/11/39/robot-648622__340.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .img5 {
+    background-image: url("https://cdn.pixabay.com/photo/2016/03/22/16/20/prostetic-1273185__340.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+  }
+
+  .img6 {
+    background-image: url("https://cdn.pixabay.com/photo/2019/04/17/17/55/calibration-cube-4134916__340.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+  }
+
+  
+  @media only screen and (min-width:768px) {
+
+    .main {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(4, 200px);
+    }
+    
+    .productos {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 0.5fr);
+    }
+    
+    .header{
+      grid-column: 1/ span 3;
+      grid-row: 1/ span 1;
+    }
+    
+    .barra-navegacion{
+      grid-column: 1/ span 3;
+      grid-row: 2/ span 1;    
+    }
+    
+    .presentacion{
+      grid-column: 1/ span 3;
+      grid-row: 3/ span 1;
+    }
+  
+    .footer{
+      grid-column: 1/ span 3;
+      grid-row: 4/ span 1;
+    }
+    
+    .footer-p{
+      grid-column: 1/ span 3;
+      grid-row: 5/ span 1;
+    }
+  
+    #edades {
+      grid-column: 1/ span 3;
+      grid-row: 3 / span 1;
+    }
+
+    .fotos {
+      grid-column: 1/ span 3;
+      
+    }
+        
+    .img1 {
+      grid-column: 1 / span 1;
+      grid-row: 1 / span 2;
+      background-image: url("https://cdn.pixabay.com/photo/2022/02/12/19/58/boats-7009838__340.jpg");
+      background-size: cover;
+      background-position: right;
+    }
+  
+    .img2 {
+      grid-column: 2 / span 1;
+      grid-row: 1 / span 3;
+      background-image: url("https://cdn.pixabay.com/photo/2016/06/26/15/12/wrench-1480588__340.jpg");
+      background-size: cover;
+      background-position: center;
+      
+    }
+  
+    .img3 {
+      grid-column: 1  / span 1;
+      grid-row: 3 / span 1;
+      background-image: url("https://cdn.pixabay.com/photo/2018/04/16/14/05/texture-3324749__340.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+  
+    .img4 {
+      grid-column: 3 / span 1;
+      grid-row: 3 / span 3;
+      background-image: url("https://cdn.pixabay.com/photo/2015/02/25/11/39/robot-648622__340.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+  
+    .img5 {
+      grid-column: 3 / span 1;
+      grid-row: 1 / span 1;
+      background-image: url("https://cdn.pixabay.com/photo/2016/03/22/16/20/prostetic-1273185__340.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+  
+    .img6 {
+      grid-column: 3 / span 1;
+      grid-row: 2 / span 1;
+      background-image: url("https://cdn.pixabay.com/photo/2019/04/17/17/55/calibration-cube-4134916__340.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+  
+ 
+  }
+

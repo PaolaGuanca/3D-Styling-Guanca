@@ -231,6 +231,27 @@ h1{
     height: 100%; width: 150%;
   }
 
+  .carousel-item h2{
+    -webkit-text-stroke: 1px black;
+  }
+  .carousel-item p{
+    -webkit-text-stroke: 1px black;
+    font-size: xx-large;
+  }
+  .carousel-item img{
+   max-width: 90%;
+   margin: 0 auto;
+  }
+  .navbar-nav{
+    background: none;  
+  }
+  a.nav-link {
+    color: black;
+    font-weight: bold;
+
+  }
+
+
   
   @media only screen and (max-width:768px) {
 

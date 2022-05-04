@@ -22,8 +22,8 @@ body {
 }
 
 ul {
-    list-style-type: none;
-    background-color: aqua;
+    
+    background-color: none;
     overflow: hidden;
     margin-right: 0px;
     padding: 0px;
@@ -38,8 +38,14 @@ ul {
     text-decoration: none;
 }
 
-li {
-    float: left;
+.socialmedia {
+  margin-left: -20px;
+}
+
+.nav-item{
+  margin: 0 20px;
+  padding: 0;
+  color: black;
 }
 
 .fotos a {
@@ -99,7 +105,7 @@ h1{
     grid-template-rows: repeat(4, .05fr);
 }
 
-.productos {
+.paginas {
   min-height: 600px;
     width: 100%;
     background-color: none;
@@ -243,12 +249,13 @@ h1{
    margin: 0 auto;
   }
   .navbar-nav{
-    background: none;  
+    background: none;
+    text-decoration: none;
+    color:black  
   }
   a.nav-link {
     color: black;
     font-weight: bold;
-
   }
 
 
@@ -260,7 +267,7 @@ h1{
       grid-template-rows: repeat(4, 200px);
     }
     
-    .productos {
+    .paginas {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(4, 0.5fr);
     }

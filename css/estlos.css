@@ -102,7 +102,7 @@ h1{
     background-color: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, .05fr);
+    grid-template-rows: repeat(5, .05fr);
 }
 
 .paginas {
@@ -129,9 +129,14 @@ h1{
   grid-row: 3/ span 1;
 }
 
-.footer{
+.card{
   grid-column: 1/ span 3;
   grid-row: 4/ span 1;
+}
+
+.footer{
+  grid-column: 1/ span 3;
+  grid-row: 5/ span 1;
 }
 
 .footer-p{

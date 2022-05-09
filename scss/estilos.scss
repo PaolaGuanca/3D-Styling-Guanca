@@ -1,0 +1,368 @@
+@import "_variables";
+
+* {
+    margin: 0;
+    padding: 5px;
+  }
+  
+  html{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: larger;
+  }
+  
+  body {
+    background: url("https://cdn.pixabay.com/photo/2017/06/02/10/36/rocket-2365907_640.jpg") no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+     background-color: cadetblue;
+     max-width: 100%;
+     min-height: 100vh;
+     margin: 0px auto;
+  }
+  
+  ul {
+      
+      background-color: none;
+      overflow: hidden;
+      margin-right: 0px;
+      padding: 0px;
+  }
+  
+  .barra-navegacion li a {
+      display: flex;
+      flex-direction: row;
+      color: $color-black;
+      text-align: center;
+      padding: 15px;
+      text-decoration: none;
+  }
+  
+  .socialmedia {
+    margin-left: -20px;
+  }
+  
+  .nav-item{
+    margin: 0 20px;
+    padding: 0;
+    color: $color-black;
+  }
+  
+  .fotos a {
+    text-decoration: none;
+    font-size: larger;
+  }
+  
+  header {
+      background: url(" https://cdn.pixabay.com/photo/2020/04/22/20/38/colorful-background-5079991__340.jpg") no-repeat center center fixed;
+      background-color: none;
+      background-size: cover;
+      width: 100%;
+      position: relative;
+      margin: 0 auto;
+      top: 0;
+      animation-name: headerimg;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in;
+      animation-duration: 10s;
+  }
+  
+  @keyframes headerimg {
+    0% {
+        background-size: 50%;
+    }
+  
+    10% {
+      background-size: 70%
+    }
+  
+    100% {
+      background-size: 100%
+    }
+  }
+  
+  
+  #imagDefondo {
+      background: url("https://cdn.pixabay.com/photo/2017/06/18/16/13/printer-2416269_640.jpg") no-repeat center;
+      background-size: 100%;
+  }
+  
+  h1{
+      text-align: center;
+  }
+  
+  .imagCircular img {
+      border-radius: 60%;
+      margin-left: 30px;
+  }
+  
+  .main {
+    min-height: 600px;
+      width: 100%;
+      background-color: none;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(5, .05fr);
+  }
+  
+  .paginas {
+    min-height: 600px;
+      width: 100%;
+      background-color: none;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+  }
+  
+  .header{
+    grid-column: 1/ span 3;
+    grid-row: 1/ span 1;
+  }
+  
+  .barra-navegacion{
+    grid-column: 1/ span 3;
+    grid-row: 2/ span 1;    
+  }
+  
+  .presentacion{
+    grid-column: 1/ span 3;
+    grid-row: 3/ span 1;
+  }
+  
+  .card{
+    grid-column: 1/ span 3;
+    grid-row: 4/ span 1;
+  }
+  
+  .footer{
+    grid-column: 1/ span 3;
+    grid-row: 5/ span 1;
+  }
+  
+  .footer-p{
+    grid-column: 1/ span 3;
+    grid-row: 4 / span 1;
+  }
+  
+  #edades {
+    min-height: 200px;
+    width: 100%;
+    background-color: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    padding: 0;
+  }
+  
+  .fotos {
+      height: 400px;
+      width: 150%;
+      background-color: none;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+     margin-top: -100px;
+    }
+  
+    .img{
+      border: 2px solid $color-white;
+    }
+    
+    .img1 {
+      background-image: url("https://cdn.pixabay.com/photo/2022/02/12/19/58/boats-7009838__340.jpg");
+      background-size: cover;
+      background-position: right;
+      grid-column: 1 / span 1;
+      grid-row: 1 / span 2;
+      transition: height 2s width 2s;
+    }
+  
+    .img1:hover {
+      height: 100%; width: 150%;
+    }
+  
+    .img2 {
+      background-image: url("https://cdn.pixabay.com/photo/2016/06/26/15/12/wrench-1480588__340.jpg");
+      background-size: cover;
+      background-position: center;
+      grid-column: 2 / span 1;
+        grid-row: 1 / span 3;
+      transition: height 2s width 1s;
+    }
+  
+    .img2:hover {
+      height: 110%; width: 110%;
+    }
+    
+    .img3 {
+      background-image: url("https://cdn.pixabay.com/photo/2018/04/16/14/05/texture-3324749__340.jpg");
+      background-size: cover;
+      background-position: center;
+      grid-column: 1  / span 1;
+      grid-row: 3 / span 1;
+      transition: height 2s width 1s;
+    }
+    .img3:hover {
+      height: 100%; width: 150%;
+    }
+  
+    .img4 {
+      background-image: url("https://cdn.pixabay.com/photo/2015/02/25/11/39/robot-648622__340.jpg");
+      background-size: cover;
+      background-position: center;
+      transition: height 2s width 1s;
+    }
+    .img4:hover {
+      height: 100%; width: 150%;
+    }
+  
+    .img5 {
+      background-image: url("https://cdn.pixabay.com/photo/2016/03/22/16/20/prostetic-1273185__340.jpg");
+      background-size: cover;
+      background-position: center;
+      color: $color-white;
+      grid-column: 3 / span 1;
+        grid-row: 1 / span 1;
+      transition: height 2s width 1s;
+    }
+    .img5:hover {
+      height: 100%; width: 150%;
+    }
+  
+    .img6 {
+      background-image: url("https://cdn.pixabay.com/photo/2019/04/17/17/55/calibration-cube-4134916__340.jpg");
+      background-size: cover;
+      background-position: center;
+      color: $color-white;
+      grid-column: 3 / span 1;
+      grid-row: 2 / span 1;
+      transition: height 2s width 1s;
+    }
+    .img6:hover {
+      height: 100%; width: 150%;
+    }
+  
+    .carousel-item h2{
+      -webkit-text-stroke: 1px $color-black;
+    }
+    .carousel-item p{
+      -webkit-text-stroke: 1px $color-black;
+      font-size: xx-large;
+    }
+    .carousel-item img{
+     max-width: 90%;
+     margin: 0 auto;
+    }
+    .navbar-nav{
+      background: none;
+      text-decoration: none;
+      color: $color-black  
+    }
+    a.nav-link {
+      color: $color-black;
+      font-weight: bold;
+    }
+  
+  
+    
+    @media only screen and (max-width:768px) {
+  
+      .main {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 200px);
+      }
+      
+      .paginas {
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(4, 0.5fr);
+      }
+      
+      .header{
+        grid-column: 1/ span 3;
+        grid-row: 1/ span 1;
+      }
+      
+      .barra-navegacion{
+        grid-column: 1/ span 3;
+        grid-row: 2/ span 1;    
+      }
+      
+      .presentacion{
+        grid-column: 1/ span 3;
+        grid-row: 3/ span 1;
+      }
+    
+      .footer{
+        grid-column: 1/ span 3;
+        grid-row: 4/ span 1;
+      }
+      
+      .footer-p{
+        grid-column: 1/ span 3;
+        grid-row: 5/ span 1;
+      }
+    
+      #edades {
+        grid-column: 1/ span 3;
+        grid-row: 3 / span 1;
+      }
+  
+      .fotos {
+        grid-column: 1/ span 3;      
+      }
+          
+      .img1 {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 2;
+        background-image: url("https://cdn.pixabay.com/photo/2022/02/12/19/58/boats-7009838__340.jpg");
+        background-size: cover;
+        background-position: right;
+      }
+    
+      .img2 {
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 3;
+        background-image: url("https://cdn.pixabay.com/photo/2016/06/26/15/12/wrench-1480588__340.jpg");
+        background-size: cover;
+        background-position: center;
+        
+      }
+    
+      .img3 {
+        grid-column: 1  / span 1;
+        grid-row: 3 / span 1;
+        background-image: url("https://cdn.pixabay.com/photo/2018/04/16/14/05/texture-3324749__340.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+    
+      .img4 {
+        grid-column: 3 / span 1;
+        grid-row: 3 / span 3;
+        background-image: url("https://cdn.pixabay.com/photo/2015/02/25/11/39/robot-648622__340.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+    
+      .img5 {
+        grid-column: 3 / span 1;
+        grid-row: 1 / span 1;
+        background-image: url("https://cdn.pixabay.com/photo/2016/03/22/16/20/prostetic-1273185__340.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+    
+      .img6 {
+        grid-column: 3 / span 1;
+        grid-row: 2 / span 1;
+        background-image: url("https://cdn.pixabay.com/photo/2019/04/17/17/55/calibration-cube-4134916__340.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+    
+   
+    }
+  
+  

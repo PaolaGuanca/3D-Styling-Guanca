@@ -1,2 +1,12 @@
 $color-black: #000;
 $color-white: #fff;
+
+$estilos:(
+    bColor: none,
+    wdt: 100%
+);
+
+@mixin grids($column,$row){
+    grid-column: $column;
+    grid-row: $row;
+}

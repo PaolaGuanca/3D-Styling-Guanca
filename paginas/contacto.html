@@ -19,73 +19,71 @@
     </header>
     <h2>Navegar en el sitio</h2>
     <nav class="navbar navbar-expand-lg navbar-light bg-none">
-       <a class="navbar-brand" href="../index.html">Inicio</a>
-       <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-       </button>
-       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav flex-row">
-            <li class="nav-item active">
-              <a class="nav-link" href="../paginas/productos.html">Productos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../paginas/personalizados.html">Personalizados</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../paginas/nosotros.html">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../paginas/contacto.html">Contactos</a>
-            </li>
-          </ul>
-        </div>
-        
+      <a class="navbar-brand" href="../index.html">Inicio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav flex-row">
+          <li class="nav-item active">
+            <a class="nav-link" href="../paginas/productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../paginas/personalizados.html">Personalizados</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../paginas/nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>        
     </nav>
     <section>
-		<article>
-			<form action="#">
-        <p><h3>Formulario de contacto:</h3></p>  
-				<input type="text" placeholder="Nombre">
-        <br/><br/>
-				<label for="email"><b>E-mail:</b>
-					<input type="email" placeholder="ejemplo@mail.com" name="email">
-            <br/>
-            <div><p><strong>Sección:</strong></p>
-               <div>Productos
-                  <input type="radio" name="lado" value="izquierda">
-               </div>
-               <div>Personalizados
-                 <input type="radio" name="lado" value="derecha">
-               </div>
-             </div>
-             <br/>
-				</label>
-				<label for="Comentarios"><strong>Observaciones:</strong>
-          <br/>
-					<textarea placeholder="Mensaje"></textarea>
-				</label>
-          <br/>
-				<p>Productos para:</p>
-				<select name="text" id="text"> 
-					<option value="niños">Niños</option>
-					<option value="adolescentes">Adolescentes</option>
-					<option value="adultos">Adultos</option>
-				</select>
-        <br/><br/>
-				<div>Suscribirse a novedades
-				  <input type="checkbox" name="acepta" value="1">
-        </div>
-        <br/>
-				<input type="submit" value="ENVIAR">
-				<input type="reset" value="RESETEAR">
-			</form>
-		</article>
-	</section>
+		  <article>
+			<div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Formulario de Contacto</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ejemplo@mail.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <p><strong>Sección:</strong></p>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Productos
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+        <label class="form-check-label" for="flexRadioDefault2">
+          Personalizados
+        </label>
+      </div>
+
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Productos para:</option>
+        <option value="1">Niños</option>
+        <option value="2">Adolescentes</option>
+        <option value="3">Adultos</option>
+      </select>
+
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+        <label class="form-check-label" for="flexSwitchCheckDefault">Suscribirse a novedades</label>
+      </div>
+
+      <input type="submit" value="ENVIAR">
+      <input type="reset" value="RESETEAR">
+		  </article>
+	  </section>
 
   <footer>
-		<h3>Logo</h3>
-		<h3>Términos y condiciones</h3>
-		<h3>Contacto</h3>
+		<a href="terminos.html"><h3>Términos y Condiciones</h3></a>
+		<a href="contacto.html"><h3>Contacto</h3></a>
     <div class="socialmedia">
       <ul class="navbar-nav flex-row ms-auto">
         <li class="nav-item">
@@ -98,7 +96,7 @@
           <a class="nav-link" href="https://web.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
         </li>
       </ul>
-   </div>
+    </div>
 	</footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

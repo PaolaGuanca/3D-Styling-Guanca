@@ -184,6 +184,11 @@ h1 {
   grid-row: 4/span 1;
 }
 
+a {
+  text-decoration: none;
+  color: #212529;
+}
+
 #edades {
   min-height: 200px;
   width: 100%;
